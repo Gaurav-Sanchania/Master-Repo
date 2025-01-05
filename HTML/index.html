@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+
+    <p>Tim berners lee invented the HTML in 1991.</p>
+    <p class="note" id="note1">HTML is a markup language that is used to create web pages.</p>
+    
+    <h1>HTML</h1>
+    <h2>HTML</h2>
+    <h3>HTML</h3>
+    <h4>HTML</h4>
+    <h5>HTML</h5>
+    <h6>HTML</h6>
+
+    <!-- Comments -->
+    <!-- This is a comment -->
+
+    <!-- Absolute URLs -->
+    <a href="https:www.google.com">Google</a><br>
+    <a href="#note1">Tim berners lee</a><br>
+    <a href="https://www.amazon.in/s?k=laptops&crid=3UR4YNG361083&sprefix=laptops%2Caps%2C222&ref=nb_sb_noss_2"><img src="https://plus.unsplash.com/premium_photo-1681666713680-fb39c13070f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRlc3R8ZW58MHx8MHx8fDA%3D" alt="TestImage" height="200px" width="150px"></a>
+    <a href="mailto:gauravsanchania@gmail.com">Send email</a>
+    <!-- Relative URL -->
+     <a href="../Projects/CODOTECH/Task 1 Personal Portfolio Website/src/index.html">Personal Portfolio</a>
+
+    <!-- Text Formating tags -->
+    <p>Lorem <b>ipsum dolor</b> sit amet <strong class="use-this">consectetur</strong> adipisicing <i>elit</i>. Doloremque, <em class="use-this">quia officia</em>! Mollitia <mark>similique</mark> impedit <small>eveniet</small> praesentium <del>ipsum</del> obcaecati a odio <ins>Gaurav</ins> amet natus <sub>esse</sub> expedita <sup>velit</sup> ex reiciendis, rem nobis asperiores.</p>
+
+    <picture>
+        <img src="https://plus.unsplash.com/premium_photo-1725404428224-664f5f0217b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt="buildings" height="200px" width="150px">
+        <img src="../Projects/CODOTECH/Task 1 Personal Portfolio Website/src/Images/Profile Photo_.png" alt="profilePhoto" height="200px" width="200px">
+    </picture>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="laptop" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.amazon.in/s?k=laptops&crid=3UR4YNG361083&sprefix=laptops%2Caps%2C222&ref=nb_sb_noss_2">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.amazon.in/s?k=phones&crid=36R7ZTVH6ICX7&sprefix=phones%2Caps%2C231&ref=nb_sb_noss_2">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.amazon.in/s?k=coffee+mug&crid=1LBX0HNRUWXDT&sprefix=coffee+mug%2Caps%2C260&ref=nb_sb_noss_2">
+    </map><br>
+
+    <video width="320" height="240" autoplay controls loop muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video><br>
+
+    <audio controls loop>
+        <source src="../src/audio/sample-3s.mp3" type="audio/mp3">
+    </audio><br>
+    
+    <embed src="../Projects/CODOTECH/Task 1 Personal Portfolio Website/src/Docs/Gaurav Sanchania_RESUME.pdf" type="" width="500" height="375"><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RNr1QZM4A38?si=Frb5U5qwg8opD6Ea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+    <canvas id="myCanvas" width="200px" height="100px" style="border: 1px solid black;">
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+            </script>
+    </canvas>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg><br>
+
+    <!-- Lists -->
+    <ul type="circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl><br>
+
+    <table>
+        <caption>Data</caption>
+        <colgroup>
+            <col style="background-color: yellow">
+            <col span="2" style="background-color: lightblue">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td rowspan="2">94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total 2 data entries.</td>
+            </tr>
+        </tfoot>
+    </table><br>
+
+    <form action="" method="" target="_blank">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" readonly><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe" disabled><br>
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" value="1234567890" required><br>
+        </fieldset>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select><br>
+        <label for="browser">Choose a browser:</label><br>
+        <input list="browsers" placeholder="Choose a browser" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value=""><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value=""><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" value=""><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" value=""><br>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color" value=""><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+        <label for="range">Range:</label><br>
+        <input type="range" id="range" name="range" value=""><br>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.
+        </textarea><br>
+        <button onclick="alert('Hello World!')">Click me!</button><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form><br>
+
+</body>
+</html>
