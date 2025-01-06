@@ -1,0 +1,243 @@
+h1 {
+    color: red;;
+    text-align: center;
+}
+
+/* Color System */
+/* RGB */
+h2 {
+    /* rgb value - 0 to 255 */
+    color: rgb(255, 0, 0);  /* red */
+}
+h3 {
+    color: rgb(0, 255, 0);  /* green */
+}
+h4 {
+    color: rgb(0, 0, 255);  /* blue */
+}
+h5 {
+    color: rgb(0, 0, 0);  /* black */
+}
+h6 {
+    color: rgb(255, 255, 255);  /* white */
+}
+
+/* RGBA */
+h2 {
+    /* rgba - with alpha specifies opacity
+        value - 0.0(fully transparent) to 1.0(not transparent at all) */
+        color: rgba(255, 0, 0, 1.0);  /* red */
+}
+h3 {
+    color: rgba(0, 255, 0, 0.2);  /* green */
+}
+h4 {
+    color: rgba(0, 0, 255, 0.7);  /* blue */
+}
+h5 {
+    color: rgba(0, 0, 0, 0.5);  /* black */
+}
+h6 {
+    color: rgba(255, 255, 255, 0.5);  /* white */
+}
+
+/* HEX - hexadecimal */
+h2 {
+    /* hex value - 00 to ff */
+    color: #ff0000;  /* red */
+}
+h3 {
+    color: #00ff00;  /* green */
+}
+h4 {
+    color: #0000ff;  /* blue */
+}
+h5 {
+    color: #000000;  /* black */
+}
+h6 {
+    color: #ffffff;  /* white */
+}
+
+/* HSL - hue, saturation, and lightness */
+h2 {
+    /* hue value - 0 to 360 degree, 0 - red, 120 - green, 240 - blue */
+    /* saturation - % value, 0 - grey, 100 - full color */
+    /* lightness - % vallue, 0 - black, 50 - normal, 100 - white */
+    color: hsl(0, 100%, 50%);  /* red */
+}
+h3 {
+    color: hsl(120, 100%, 50%);  /* green */
+}
+h4 {
+    color: hsl(240, 100%, 50%);  /* blue */
+}
+h5 {
+    color: hsl(0, 0%, 0%);  /* black */
+}
+h6 {
+    color: hsl(0, 0%, 100%);  /* white */
+}
+
+/* HSLA - with alpha */
+h2 {
+    color: hsla(0, 100%, 50%, 1.0);  /* red */
+}
+h3 {
+    color: hsla(120, 100%, 50%, 0.3);  /* green */
+}
+h4 {
+    color: hsla(240, 100%, 50%, 0.7);  /* blue */
+}
+h5 {
+    color: hsla(0, 0%, 0%, 0.5);  /* black */
+}
+h6 {
+    color: hsla(0, 0%, 100%, 0.5);  /* white */
+}
+
+/* Selectors */
+/* Universal Selector */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Class Selector */
+.heading {
+    color: blue;
+}
+/* Id Selector */
+#head4 {
+    color: green;
+}
+/* Element Selector */
+p {
+    color: purple;
+}
+
+/* Border */
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+/* Shorthand for border */
+p.solid {
+    border: 5px solid red;
+    /* border radius */
+    border-radius: 10%;
+}
+
+/* Margin */
+#margin1 {
+    margin: 10px;
+}
+#margin2 {
+    /* Top Right Bottom Left */
+    margin: 10px 20px 30px 40px;
+}
+#margin3 {
+    /* Top Right-Left Bottom*/
+    margin: 10px 20px 30px;
+}
+#margin4 {
+    /* Top-Bottom Right-Left */
+    margin: 10px 20px;
+}
+#margin5 {
+    width: 300px;
+    /* Horizontally center */
+    margin: auto;
+}
+
+/* Padding */
+.paddingBox {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* Display */
+.displayClass {
+    display: block;
+    background-color: lightcoral;
+}
+.displayInline {
+    display: inline;
+    background-color: lightblue;
+}
+.displayHidden {
+    display: none;
+    /* visibility : hidden; */
+}
+.display {
+    display: inline-block;
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+}
+
+/* Position */
+.positionStatic {
+    position: static;
+    background-color: lightcoral;
+}
+.positionRelative {
+    /* An element with position: relative; is positioned relative to its normal position. */
+    position: relative;
+    background-color: lightblue;
+    left: 50px;
+    /* top: 50px; */
+}
+.positionAbsolute {
+    /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+    position: absolute;
+    background-color: lightgreen;
+    left: 100px;
+    top: 150px;
+}
+.positionFixed {
+    /* An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. */
+    position: fixed;
+    background-color: lightyellow;
+    left: 50px;
+    top: 50px;
+}
+.positionSticky {
+    /* An element with position: sticky; is positioned based on the user's scroll position. */
+    position: sticky;
+    background-color: lightpink;
+    top: 0;
+}
+
+/* Flex */
+.flexContainer {
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+    flex-wrap: wrap; /* wrap, nowrap, wrap-reverse */
+    justify-content: center; /* flex-start, flex-end, center, space-between, space-around */
+    align-items: center; /* stretch, flex-start, flex-end, center, baseline */
+    align-content: center; /* stretch, flex-start, flex-end, center, space-between, space-around */;
+}
+.flexContainer > div {
+    flex-grow: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Grid */
+.gridContainer {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-item {
+    grid-column: 1 / span 3;
+}

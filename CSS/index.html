@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Priority after inline > internal or external in head tag. -->
+</head>
+<body>
+
+    <p>It is a language that is used to describe the style of the document.</p>
+
+    <!-- Inline CSS -->
+    <!-- Has highest priority -->
+    <p class="para" style="background-color: cyan;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, culpa.</p>
+
+    <h1>Lorem, ipsum.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+
+    <!-- Color system -->
+    <h1>Color System</h1>
+    <h2>Color System</h2>
+    <h3>Color System</h3>
+    <h4>Color System</h4>
+    <h5>Color System</h5>
+    <h6>Color System</h6>
+
+    <!-- Selectors -->
+    <h1 class="heading">Selectors</h1>
+    <h2 class="heading">Selectors</h2>
+    <h3 class="heading">Selectors</h3>
+    <h4 id="head4">Selectors</h4>
+    <h5>Selectors</h5>
+
+    <!-- Border -->
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <p class="solid">A solid border.</p>
+
+
+    <!-- Margin -->
+    <!-- Margin Collapse - Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins -->
+    <div class="container">
+        <p class="margin" id="margin1">A margin of 50px.</p>
+        <p class="margin" id="margin2">A margin of 100px.</p>
+        <p class="margin" id="margin3">A margin of 150px.</p>
+        <p class="margin" id="margin4">A margin of 200px.</p>
+        <p class="margin" id="margin5">A margin of 250px.</p>
+    </div>
+
+    <!-- Padding - Same concept goes with padding as of margin and also the shorthand property. -->
+    <!-- But padding do not colapse. Use box-sizing property to keep the width of container as assigned, no matter the amount of padding. -->
+    <div class="paddingBox">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel iusto possimus doloremque, saepe voluptate nemo!
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+        <a href="#margin1" class="displayClass">Click here</a>
+        <p class="displayInline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sed quam nulla quas molestiae enim earum blanditiis totam recusandae laudantium dolores in, ipsum expedita vitae?.</p>
+        <p class="displayHidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur delectus ab architecto voluptas culpa iste exercitationem vel consectetur quidem.</p>
+    </div>
+
+    <!-- Position -->
+    <div class="position">
+        <p class="positionStatic">Static</p>
+        <p class="positionRelative">Relative</p>
+        <p class="positionAbsolute">Absolute</p>
+        <p class="positionFixed">Fixed</p>
+        <p class="positionSticky">Sticky</p>
+    </div>
+
+    <!-- Flex -->
+    <div class="flexContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="gridContainer">
+        <div class="grid-item">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+
+</body>
+</html>
